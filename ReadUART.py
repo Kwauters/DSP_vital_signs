@@ -10,7 +10,7 @@ from threading import Thread
 
 
 class UartData():
-    def __init__(self,configFileName,comport = 'COM4',dataport = 'COM5') -> None:
+    def __init__(self,configFileName,comport = 'COM8',dataport = 'COM6') -> None:
         
         # ports and baudrates for COM and Data
         self.comport = comport
@@ -444,7 +444,7 @@ if __name__ == "__main__":
     # sensorStopReset()
     # Configurate the serial port
     configFileName = r"Configuration_workwithAreaScanner.cfg"
-    uartdata = UartData(configFileName=configFileName,comport='COM3',dataport='COM4')
+    uartdata = UartData(configFileName=configFileName,comport = 'COM8',dataport = 'COM6')
     uartdata.serialConfig()
     # Main loop to get data coming from Uart
     q = queue.Queue()
