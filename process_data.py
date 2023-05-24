@@ -23,6 +23,9 @@ def phase_unwrap(phase: float) -> float:
 
 
 def process_files():
+    """
+    Processes the files for each rangebin one by one and prints the breathing rate and heart rate to the console.
+    """
     dirname_project = os.path.dirname(__file__)
     dirname_recordings = os.path.join(dirname_project, "recordings")
     for filename in os.listdir(dirname_recordings):
