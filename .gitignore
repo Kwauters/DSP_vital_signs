@@ -1,0 +1,7 @@
+*.wav
+/venv/
+/.idea/
+**/*_old/
+/dataset/
+/temp/
+**/*.7z
